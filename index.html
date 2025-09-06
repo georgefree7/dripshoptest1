@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DripShop - Twój Sklep Dropshipping</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
+<header>
+<h1>
+  <a href="index.html">
+    <img src="images/logoo.png" alt="DripShop" class="logo">
+  </a>
+</h1>
+<nav>
+    <a href="#">Strona Główna</a>
+    <a href="#">Katalog</a>
+    <a href="#">O Nas</a>
+    <a href="#">Kontakt</a>
+</nav>
+<a href="cart.html" class="cart">🛒 Koszyk (<span id="cart-count">0</span>)</a>
+</header>
+
+<main>
+<h2>🔥 Nasze Produkty 🔥</h2>
+<div class="products">
+
+    <!-- 1. techblack -->
+    <div class="product-card" onclick="openProduct('techblack')">
+      <img src="images/techblack.jpg" alt="Bluza Nike Tech Fleece Czarny">
+      <h3>Bluza Nike Tech Fleece – Czarny-szary</h3>
+      <span class="price">299 PLN / 75 USD</span>
+    </div>
+
+    <!-- 2. techwhite -->
+    <div class="product-card" onclick="openProduct('techwhite')">
+      <img src="images/techwhite.jpg" alt="Bluza Nike Tech Fleece Biały">
+      <h3>Bluza Nike Tech Fleece – Biały</h3>
+      <span class="price">299 PLN / 75 USD</span>
+    </div>
+
+    <!-- 3. ston -->
+    <div class="product-card" onclick="openProduct('ston')">
+      <img src="images/ston.jpg" alt="Stone Island Hoodie">
+      <h3>Stone Island Hoodie – Czarny z dwoma naszywkami</h3>
+      <span class="price">499 PLN / 125 USD</span>
+    </div>
+
+    <!-- 4. guess -->
+    <div class="product-card" onclick="openProduct('guess')">
+      <img src="images/guess.jpg" alt="Guess Męska Saszetka">
+      <h3>Guess Męska Saszetka – Styl i Wygoda</h3>
+      <span class="price">199 PLN / 50 USD</span>
+    </div>
+
+    <!-- 5. tn -->
+    <div class="product-card" onclick="openProduct('tn')">
+      <img src="images/tn.jpg" alt="Nike TN Spider-Man">
+      <h3>Nike TN – Edycja Spider-Man</h3>
+      <span class="price">399 PLN / 100 USD</span>
+    </div>
+
+    <!-- 6. hugoboss -->
+    <div class="product-card" onclick="openProduct('hugoboss')">
+      <img src="images/hugoboss.jpg" alt="Termos Hugo Boss">
+      <h3>Termos Hugo Boss</h3>
+      <span class="price">149 PLN / 39 USD</span>
+    </div>
+
+    <!-- 7. michaelkors -->
+    <div class="product-card" onclick="openProduct('michaelkors')">
+      <img src="images/michaelkors.jpg" alt="Torebka Michael Kors">
+      <h3>Torebka Michael Kors – Damska</h3>
+      <span class="price">499 PLN / 129 USD</span>
+    </div>
+
+    <!-- 8. nikepants -->
+    <div class="product-card" onclick="openProduct('nikepants')">
+      <img src="images/nikepants.jpg" alt="Nike Tech Fleece Spodnie">
+      <h3>Spodnie Nike Tech Fleece – Czarne</h3>
+      <span class="price">299 PLN / 79 USD</span>
+    </div>
+
+</div>
+</main>
+
+<footer>
+<p>© 2025 DripShop. Wszystkie prawa zastrzeżone.</p>
+<p>
+    <a href="https://www.instagram.com/joraantisocial7/" class="social">Instagram</a> |
+    <a href="#" class="social">TikTok</a> |
+    <a href="#" class="social">Telegram</a>
+</p>
+</footer>
+
+<script>
+// Переход на stronę produktu
+function openProduct(productId) {
+  window.location.href = `product.html?product=${productId}`;
+}
+</script>
+
+</body>
+</html>
+``
